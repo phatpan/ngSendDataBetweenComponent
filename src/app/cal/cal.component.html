@@ -1,0 +1,4 @@
+<input type="number" min="0" name="num1" ngModel [(ngModel)]="num1"> <span>+</span>
+<input type="number" min="0" name="num2" ngModel [(ngModel)]="num2"><br><br>
+<app-action-cal [parameter1]="num1" [parameter2]="num2" (calculate)="result($event)"></app-action-cal>
+<p>{{ 'Result is ' + resultValue }}</p>
